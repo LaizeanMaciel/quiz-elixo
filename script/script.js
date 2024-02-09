@@ -187,6 +187,10 @@ const perguntas = [
   const quiz = document.querySelector('#quiz')
   const template = document.querySelector('template')
 
+  //Remover imagem
+  const imagem = document.querySelector('.img')
+  imagem.remove()
+
   const corretas = new Set()
   const totalDeAcertos = perguntas.length
   const mostrarTotal = document.querySelector('#acertos span')
